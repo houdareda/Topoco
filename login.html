@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Castro - HTML 5 Template Preview</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="style.css">
+
+    
+    <!-- Css File -->
+    <link rel="stylesheet" href="css/login_register.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css">
+</head>
+<body>
+    
+    <header>
+
+        <div class="top-nav container">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form class="search">
+                <input type="search" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="cart_header">
+                <div onclick="open_cart()" class="icon_cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count_item">0</span>
+                </div>
+                <div class="tottal_price">
+
+                    <p>My Cart:</p>
+                    <p class="price_cart_head">$0.00</p>
+                </div>
+            </div>
+
+        </div>
+
+        <nav>
+
+            <div class="links container">
+          
+
+                <span onclick="open_Menu()" class="btn_open_Menu"><i class="fa-solid fa-bars"></i></span>
+
+                <ul>
+                    <span onclick="close_Menu()" class="bg_overlay"></span>
+                    <span onclick="close_Menu()" class="btn_Close_Menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                    <a href="#" class="logo_menu_mobile"><img src="img/logo-black.png" alt=""></a>
+                    
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="all_products.html">All Product</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <div class="log_signup">
+                    
+                    <a href="signup.html">sign up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>My Cart <span class="count_item_cart">(0 Item in Cart)</span></h3>
+            <span onclick="close_cart()" class="close_cart"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+        <div class="items_in_cart">
+
+
+
+        </div>
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>Car Subtotal</p>
+                <p class="price_cart_total">$$0.00</p>
+            </div>
+            <div class="button_cart">
+                <a href="checkout.html" class="btn_cart">PROCEED TO CHECKOUT</a>
+                <button onclick="close_cart()" class="btn_cart trans_bg">Shop more</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <section class="signin sec_form">
+      <div class="form-container">
+        <p class="title">Welcome back</p>
+        <form class="form">
+          <input type="email" class="input" placeholder="Email">
+          <input type="password" class="input" placeholder="Password">
+          <p class="page-link">
+            <a href="#" class="page-link-label">Forgot Password?</a>
+          </p>
+          <button class="form-btn">Log in</button>
+        </form>
+        <p class="sign-up-label">
+          Don't have an account? <a href="signup.html" class="sign-up-link">Sign up</a>
+        </p>
+
+
+        <div class="buttons-container">
+          <div class="apple-login-button">
+            <i class="fa-brands fa-apple"></i>
+            <span>Log in with Apple</span>
+          </div>
+          <div class="google-login-button">
+            <i class="fa-brands fa-google"></i>
+            <span>Log in with Google</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hotline Free 24/24:</h5>
+                        <h6>(+100) 123 456 7890</h6>
+                    </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit consectetur.
+
+                </p>
+            </div>
+            <div class="row">
+                <h4>FAQs & Help</h4>
+                <div class="links">
+                    <a href="#">F.A.Q.’s</a>
+                    <a href="#">Ordering Tracking</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Events</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Shipping & Delivery</h4>
+                <div class="links">
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Discount</a>
+                    <a href="#">Payment & Shipping</a>
+                    <a href="#">Estimated Delivery Time</a>
+                    <a href="#">Shipping Guide</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Information</h4>
+                <div class="links">
+                    <a href="#">Popular</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="container">
+                <p>Copyright © <span>Topico.</span> All Rights Reserved</p>
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="swiperJs/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

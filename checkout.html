@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Castro - HTML 5 Template Preview</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="img/logo-black.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="top-nav container">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form class="search">
+                <input type="search" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="cart_header">
+                <div onclick="open_cart()" class="icon_cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count_item">0</span>
+                </div>
+                <div class="tottal_price">
+
+                    <p>My Cart:</p>
+                    <p class="price_cart_head">$0.00</p>
+                </div>
+            </div>
+
+        </div>
+
+        <nav>
+
+            <div class="links container">
+          
+
+                <span onclick="open_Menu()" class="btn_open_Menu"><i class="fa-solid fa-bars"></i></span>
+
+                <ul>
+                    <span onclick="close_Menu()" class="bg_overlay"></span>
+                    <span onclick="close_Menu()" class="btn_Close_Menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                    <a href="#" class="logo_menu_mobile"><img src="img/logo-black.png" alt=""></a>
+                    
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="all_products.html">All Product</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <div class="log_signup">
+                    <a href="login.html">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup.html">sign up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>My Cart <span class="count_item_cart">(0 Item in Cart)</span></h3>
+            <span onclick="close_cart()" class="close_cart"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+        <div class="items_in_cart">
+
+
+
+        </div>
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>Car Subtotal</p>
+                <p class="price_cart_total">$$0.00</p>
+            </div>
+            <div class="button_cart">
+                <a href="#" class="btn_cart">PROCEED TO CHECKOUT</a>
+                <button onclick="close_cart()" class="btn_cart trans_bg">Shop more</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <section class="checkout">
+        <div class="container">
+            <form action="">
+
+                <div class="address">
+                    <h2>Delivery Address</h2>
+                    <div class="inputs">
+                        <label for="">Email</label>
+                        <input type="email">
+
+                        <label for="">Name</label>
+                        <input type="text">
+
+                        <label for="">Address</label>
+                        <input type="text">
+
+                        <label for="">Phone</label>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="coupon">
+                    <h2>coupon code</h2>
+                    <div class="inputs">
+                        <label for="">coupon code</label>
+                        <input type="email">
+
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="ordersummary">
+               <h1>order summary</h1> 
+
+               <div class="items">
+
+                <div class="item_cart">
+                    <img src="img/product/product-1.jpg" alt="">
+                    <div class="content">
+                        <h4>Original Mobile Android Dual SIM Smart Phone G3</h4>
+                        <p class="price_cart">Price : <span>$185</span></p>
+                    </div>
+                </div>
+
+                <div class="item_cart">
+                    <img src="img/product/product3.jpg" alt="">
+                    <div class="content">
+                        <h4>Original Mobile Android Dual SIM Smart Phone G3</h4>
+                        <p class="price_cart">Price : <span>$185</span></p>
+                    </div>
+                </div>
+
+                <div class="total">
+                   <p>Total:</p>
+                   <span>$185.00</span>
+                </div>
+
+                <div class="button_div">
+                    <button>Place order</button>
+                </div>
+
+               </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hotline Free 24/24:</h5>
+                        <h6>(+100) 123 456 7890</h6>
+                    </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit consectetur.
+
+                </p>
+            </div>
+            <div class="row">
+                <h4>FAQs & Help</h4>
+                <div class="links">
+                    <a href="#">F.A.Q.’s</a>
+                    <a href="#">Ordering Tracking</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Events</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Shipping & Delivery</h4>
+                <div class="links">
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Discount</a>
+                    <a href="#">Payment & Shipping</a>
+                    <a href="#">Estimated Delivery Time</a>
+                    <a href="#">Shipping Guide</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Information</h4>
+                <div class="links">
+                    <a href="#">Popular</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="container">
+                <p>Copyright © <span>Topico.</span> All Rights Reserved</p>
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="swiperJs/swiper-bundle.min.js"></script>
+
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

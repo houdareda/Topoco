@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Castro - HTML 5 Template Preview</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css">
+</head>
+<body>
+    
+    <header>
+
+        <div class="top-nav container">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form class="search">
+                <input type="search" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="cart_header">
+                <div onclick="open_cart()" class="icon_cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count_item">0</span>
+                </div>
+                <div class="tottal_price">
+
+                    <p>My Cart:</p>
+                    <p class="price_cart_head">$0.00</p>
+                </div>
+            </div>
+
+        </div>
+
+        <nav>
+
+            <div class="links container">
+          
+
+                <span onclick="open_Menu()" class="btn_open_Menu"><i class="fa-solid fa-bars"></i></span>
+
+                <ul>
+                    <span onclick="close_Menu()" class="bg_overlay"></span>
+                    <span onclick="close_Menu()" class="btn_Close_Menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                    <a href="#" class="logo_menu_mobile"><img src="img/logo-black.png" alt=""></a>
+                    
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="all_products.html">All Product</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <div class="log_signup">
+                    <a href="login.html">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup.html">sign up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>My Cart <span class="count_item_cart">(0 Item in Cart)</span></h3>
+            <span onclick="close_cart()" class="close_cart"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+        <div class="items_in_cart">
+
+
+
+        </div>
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>Car Subtotal</p>
+                <p class="price_cart_total">$$0.00</p>
+            </div>
+            <div class="button_cart">
+                <a href="#" class="btn_cart">PROCEED TO CHECKOUT</a>
+                <button onclick="close_cart()" class="btn_cart trans_bg">Shop more</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <section class="item_detail">
+        <div class="container">
+            <div class="img_item">
+                <div class="big_img">
+                    <img id="big_img" src="img/product/product-1.jpg" alt="">
+                </div>
+                <div class="sm_imgs">
+                    <img onclick="myProduct(this.src)" src="img/product/product-1.jpg" alt="">
+                    <img onclick="myProduct(this.src)" src="img/product/product1.jpg" alt="">
+                    <img onclick="myProduct(this.src)" src="img/product/product-2.jpg" alt="">
+                    <img onclick="myProduct(this.src)" src="img/product/product2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="details_item">
+                <h1 class="name">Original Mobile Android Dual SIM Smart Phone G3</h1>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="price">
+                    <p><span>$120.00</span></p>
+                    <p class="old_price">$170.00</p>
+                </div>
+
+                <h5>Avaailability: <span>In Stock</span></h5>
+                <h5>SKU: <span>Samsung C49J89: £875, Debenhams Plus</span></h5>
+                <!-- lorem 50 -->
+                <p class="text_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis necessitatibus maiores est veniam, quibusdam eum laboriosam, minima at ipsam accusantium harum officiis odio, esse nam? Rem nulla voluptatem recusandae vel adipisci ipsam eaque quidem, aut, harum ducimus exercitationem numquam cum impedit asperiores nisi cupiditate commodi atque rerum iure dolorum tenetur.</p>
+                <h4>Hurry Up! Only 98 products left in stock.</h4>
+                <button>add to cart <i class="fa-solid fa-cart-arrow-down"></i></button>
+                <div class="icons">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    <span><i class="fa-solid fa-sliders"></i></span>
+                    <span><i class="fa-solid fa-print"></i></span>
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="slide slide_sale">
+        <div class="container">
+            <div class="sale_sec mySwiper">
+                <div class="top_slide">
+                    <h2>on sale <span>products</span></h2>
+                </div>
+                <div class="products swiper-wrapper" id="slide_sale_item">
+
+                </div>
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+          
+            </div>
+            
+        </div>
+    </section>
+   
+
+
+    
+    <script src="swiperJs/swiper-bundle.min.js"></script>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/add_product_item_page.js"></script>
+    <script src="js/swiper.js"></script>
+
+   
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Products</title>
+</head>
+<body>
+    <div id="selected-products-container">
+        <!-- هنا ستتم إضافة المنتجات المحددة -->
+    </div>
+
+    <script>
+        // جلب بيانات selected_products من الملف JSON
+        fetch('selected_products.json')
+            .then(response => response.json())
+            .then(data => {
+                // تكوين عنصر لكل منتج في selected_products وإضافته إلى صفحة HTML
+                const selectedProductsContainer = document.getElementById('selected-products-container');
+                data.selected_products.forEach(product => {
+                    const productElement = document.createElement('div');
+                    productElement.innerHTML = `
+                        <img src="${product.img}" alt="${product.name}">
+                        <h2>${product.name}</h2>
+                        <p>${product.p}</p>
+                        <p>${product.parg}</p>
+                    `;
+                    selectedProductsContainer.appendChild(productElement);
+                });
+            });
+    </script>
+</body>
+</html>
